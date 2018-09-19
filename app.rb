@@ -7,7 +7,7 @@ class App < Sinatra::Base
     "#{@reverseName}"
   end
 
-  get '/squere/:number' do
+  get '/square/:number' do
     @square = (params[:number].to_i)*(params[:number].to_i).to_s
     "#{@square}"
   end
