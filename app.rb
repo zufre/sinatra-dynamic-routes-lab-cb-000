@@ -17,6 +17,7 @@ class App < Sinatra::Base
     num.times do
       phrase += "#{params[:number]}"
     end
+    phrase
 
   end
 
