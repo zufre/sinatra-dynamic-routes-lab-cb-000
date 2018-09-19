@@ -7,4 +7,8 @@ class App < Sinatra::Base
     "#{@reverseName}"
   end
 
+  get '/squere/:number' do
+    "#{params[:number].to_i**2}"
+  end
+
 end
