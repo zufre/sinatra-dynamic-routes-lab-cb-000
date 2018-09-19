@@ -25,7 +25,10 @@ class App < Sinatra::Base
   end
 
   get '/:operation/:number1/:number2' do
-    case params[:operation]
+    
+    operator = params[:operation]
+      
+    case operator
     when "add"
       "#{params[:number1] + params[:number2]}"
     when "subtract"
