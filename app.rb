@@ -5,5 +5,5 @@ class App < Sinatra::Base
   get '/reversename/:name' do
     parmas[:name].reverse
   end
-  
+
 end
