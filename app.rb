@@ -9,7 +9,7 @@ class App < Sinatra::Base
 
   get '/squere/:number' do
     @square = (params[:number].to_i)*(params[:number].to_i)
-    "#{@square}"
+    "#{@square.to_s}"
   end
 
 end
