@@ -8,8 +8,8 @@ class App < Sinatra::Base
   end
 
   get '/squere/:number' do
-    @square = (params[:number].to_i)*(params[:number].to_i)
-    "#{@square.to_s}"
+    @square = (params[:number].to_i)*(params[:number].to_i).to_s
+    "#{@square}"
   end
 
 end
