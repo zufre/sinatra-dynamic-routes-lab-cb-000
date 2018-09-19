@@ -29,7 +29,7 @@ class App < Sinatra::Base
     operator = params[:operation]
 
     case operator
-    when "add"
+    when add
       "#{params[:number1] + params[:number2]}"
     when "subtract"
       "#{params[:number1] - params[:number2]}"
